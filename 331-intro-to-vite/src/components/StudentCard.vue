@@ -17,7 +17,7 @@ defineProps<{
 
 <template>
   <div class="student-class">
-    <div class="student-card">
+    <div class="student-card hover:scale-101 hover:shadow-sp">
       <h2>{{ student.name + ' ' + student.surname }}</h2>
       <span>GPA: {{ student.gpa }}</span>
     </div>
@@ -32,8 +32,8 @@ defineProps<{
   border: 1px solid #39495c;
   margin-bottom: 18px;
 }
-.student-card:hover {
+/* .student-card:hover {
   transform: scale(1.01);
   box-shadow: 0 3px 12px 0 rgba(0, 0, 0, 0.2);
-}
+} */
 </style>
