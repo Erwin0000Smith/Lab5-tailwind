@@ -1,6 +1,5 @@
 <script setup lang="ts">
   import EventCard from '@/components/EventCard.vue';
-  import EventDetails from '@/components/EventDetails.vue'
   import { type Event } from '@/types'
   import { ref, onMounted, computed, watchEffect } from 'vue'
   import EventService from '@/services/EventService'
@@ -38,7 +37,6 @@
     <!-- new element-->
   <div class="flex flex-col items-center">
     <EventCard v-for="event in events" :key="event.id" :event="event"></EventCard>
-    <EventDetails v-for="event in events" :key="'details-' + event.id" :event="event"></EventDetails>
   <div class="pagination">
   <RouterLink
     id="page-prev"
