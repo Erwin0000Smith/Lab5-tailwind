@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "@types/nprogress": "^0.2.3",
+    "axios": "^1.7.2",
+    "nprogress": "^0.2.0"
+  }
+}
